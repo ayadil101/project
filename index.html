@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of Robotics | Robotics & Artificial Intelligence</title>
+    <meta name="description" content="Explore the world of robotics and artificial intelligence — robot types, core technologies, real-world applications, and the evolution of intelligent machines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== LOADING SCREEN ===================== -->
+    <div id="loader" class="loader">
+        <div class="loader-logo">R<span class="accent">AI</span></div>
+        <div class="loader-bar">
+            <div class="loader-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">R</span><span class="logo-text">AI</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#types" class="nav-link">Robot Types</a>
+                <a href="#tech" class="nav-link">Technologies</a>
+                <a href="#applications" class="nav-link">Applications</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+        </div>
+    </header>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow glow-1"></div>
+            <div class="hero-glow glow-2"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow fade-in">ROBOTICS &amp; ARTIFICIAL INTELLIGENCE</p>
+            <h1 class="hero-title slide-up">Future of <span class="accent">Robotics</span></h1>
+            <p class="hero-subtitle slide-up delay-1" id="typedText"></p>
+            <div class="hero-buttons slide-up delay-2">
+                <button class="btn btn-primary ripple" id="exploreBtn">Explore</button>
+                <button class="btn btn-outline ripple" id="learnMoreBtn">Learn More</button>
+            </div>
+        </div>
+
+        <div class="hero-robot floating">
+            <div class="robot-shape">
+                <div class="robot-glow"></div>
+                <div class="robot-head">
+                    <div class="robot-eye eye-l"></div>
+                    <div class="robot-eye eye-r"></div>
+                    <div class="robot-antenna"></div>
+                </div>
+                <div class="robot-body">
+                    <div class="robot-core"></div>
+                </div>
+                <div class="robot-arm arm-l"></div>
+                <div class="robot-arm arm-r"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ROBOTICS ===================== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Foundations</p>
+                <h2 class="section-title">About Robotics</h2>
+                <p class="section-desc">Understanding the science of designing, building, and operating intelligent machines.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+                    </div>
+                    <h3>What is Robotics?</h3>
+                    <p>Robotics is the interdisciplinary field combining engineering and computer science to design, build, and operate machines that sense, think, and act in the physical world.</p>
+                </div>
+
+                <div class="about-card glass">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+                    </div>
+                    <h3>History of Robotics</h3>
+                    <p>From the first industrial arm in 1961 to today's autonomous humanoids, robotics has evolved through decades of breakthroughs in mechanics, electronics, and AI.</p>
+                </div>
+
+                <div class="about-card glass">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg>
+                    </div>
+                    <h3>How Robots Work</h3>
+                    <p>Robots perceive their environment through sensors, process information with onboard logic or AI, and act on the world through actuators and motors.</p>
+                </div>
+
+                <div class="about-card glass">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+                    </div>
+                    <h3>Main Components</h3>
+                    <p>Every robot relies on a core set of parts: sensors, controllers, actuators, a power source, an end effector, and software that ties it all together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATISTICS ===================== -->
+    <section class="counters">
+        <div class="container counters-grid">
+            <div class="counter-item">
+                <span class="counter" data-target="3500000">0</span><span class="counter-suffix">+</span>
+                <p>Industrial Robots Worldwide</p>
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="37">0</span><span class="counter-suffix">%</span>
+                <p>Annual AI Market Growth</p>
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="180">0</span><span class="counter-suffix">B</span>
+                <p>Global Robotics Market ($)</p>
+            </div>
+            <div class="counter-item">
+                <span class="counter" data-target="120">0</span><span class="counter-suffix">+</span>
+                <p>Countries Using Robotics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TYPES OF ROBOTS ===================== -->
+    <section class="section section-alt" id="types">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Classification</p>
+                <h2 class="section-title">Types of Robots</h2>
+                <p class="section-desc">From factory floors to deep space, robots take many forms built for specific missions.</p>
+            </div>
+
+            <div class="types-grid">
+
+                <article class="type-card glass">
+                    <div class="type-img type-1"></div>
+                    <div class="type-info">
+                        <h3>Industrial Robots</h3>
+                        <p>Fixed robotic arms automating manufacturing, welding, and assembly lines.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Precision and 24/7 throughput.</p>
+                        <p class="type-ex"><strong>Example:</strong> FANUC, KUKA arms.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-2"></div>
+                    <div class="type-info">
+                        <h3>Service Robots</h3>
+                        <p>Robots assisting with everyday tasks in homes and businesses.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Convenience and labor support.</p>
+                        <p class="type-ex"><strong>Example:</strong> Robotic vacuum cleaners.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-3"></div>
+                    <div class="type-info">
+                        <h3>Medical Robots</h3>
+                        <p>Precision systems assisting surgeons and supporting patient care.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Sub-millimeter accuracy.</p>
+                        <p class="type-ex"><strong>Example:</strong> Surgical assistance systems.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-4"></div>
+                    <div class="type-info">
+                        <h3>Educational Robots</h3>
+                        <p>Programmable kits that teach coding, electronics, and STEM concepts.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Hands-on learning.</p>
+                        <p class="type-ex"><strong>Example:</strong> Classroom robotics kits.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-5"></div>
+                    <div class="type-info">
+                        <h3>Military Robots</h3>
+                        <p>Unmanned systems for reconnaissance, logistics, and bomb disposal.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Removes humans from danger.</p>
+                        <p class="type-ex"><strong>Example:</strong> EOD disposal robots.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-6"></div>
+                    <div class="type-info">
+                        <h3>Agricultural Robots</h3>
+                        <p>Autonomous machines for planting, harvesting, and crop monitoring.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Higher yield, less labor.</p>
+                        <p class="type-ex"><strong>Example:</strong> Autonomous harvesters.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-7"></div>
+                    <div class="type-info">
+                        <h3>Space Exploration Robots</h3>
+                        <p>Rovers and probes exploring planets and gathering scientific data.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Survives extreme environments.</p>
+                        <p class="type-ex"><strong>Example:</strong> Mars rovers.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-8"></div>
+                    <div class="type-info">
+                        <h3>Humanoid Robots</h3>
+                        <p>Bipedal robots designed to mimic human movement and interaction.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Operates in human-built spaces.</p>
+                        <p class="type-ex"><strong>Example:</strong> Research humanoid platforms.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-9"></div>
+                    <div class="type-info">
+                        <h3>Autonomous Vehicles</h3>
+                        <p>Self-driving cars and shuttles that navigate roads without a driver.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Improved road safety potential.</p>
+                        <p class="type-ex"><strong>Example:</strong> Self-driving test fleets.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-10"></div>
+                    <div class="type-info">
+                        <h3>Underwater Robots</h3>
+                        <p>ROVs and AUVs exploring oceans, pipelines, and shipwrecks.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Reaches extreme depths.</p>
+                        <p class="type-ex"><strong>Example:</strong> Deep-sea survey ROVs.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-11"></div>
+                    <div class="type-info">
+                        <h3>Drone Robots</h3>
+                        <p>Aerial robots for surveying, delivery, photography, and inspection.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Fast aerial access.</p>
+                        <p class="type-ex"><strong>Example:</strong> Quadcopter drones.</p>
+                    </div>
+                </article>
+
+                <article class="type-card glass">
+                    <div class="type-img type-12"></div>
+                    <div class="type-info">
+                        <h3>Rescue Robots</h3>
+                        <p>Robots that search disaster sites for survivors in hazardous terrain.</p>
+                        <p class="type-adv"><strong>Advantage:</strong> Operates in collapsed structures.</p>
+                        <p class="type-ex"><strong>Example:</strong> Search-and-rescue crawlers.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TECHNOLOGIES SECTION ===================== -->
+    <section class="section" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Core Stack</p>
+                <h2 class="section-title">Technologies</h2>
+                <p class="section-desc">The building blocks behind every intelligent machine.</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Decision-making systems that learn from data.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Machine Learning</h3>
+                    <p>Algorithms that improve through experience.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Computer Vision</h3>
+                    <p>Enabling robots to interpret visual data.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Sensors</h3>
+                    <p>Gathering data on light, distance, and motion.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Actuators</h3>
+                    <p>Converting signals into physical movement.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Arduino</h3>
+                    <p>Open-source boards for prototyping robotics.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Raspberry Pi</h3>
+                    <p>Compact computers powering smart robots.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Internet of Things</h3>
+                    <p>Connecting robots into networked systems.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Embedded Systems</h3>
+                    <p>Dedicated hardware running robot control logic.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>ROS</h3>
+                    <p>The Robot Operating System framework for development.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Robotics Programming</h3>
+                    <p>Python, C++, and more powering robot behavior.</p>
+                </div>
+                <div class="tech-card glass"><span class="tech-icon">◆</span>
+                    <h3>Automation</h3>
+                    <p>Orchestrating repetitive tasks without human input.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== APPLICATIONS SECTION ===================== -->
+    <section class="section section-alt" id="applications">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Real World</p>
+                <h2 class="section-title">Applications</h2>
+                <p class="section-desc">Robotics is transforming nearly every industry.</p>
+            </div>
+
+            <div class="apps-grid">
+                <div class="app-card glass">
+                    <h3>Factories</h3>
+                    <p>Automated assembly and quality control.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Hospitals</h3>
+                    <p>Surgical assistance and patient logistics.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Schools</h3>
+                    <p>STEM education and coding instruction.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Agriculture</h3>
+                    <p>Precision planting and crop monitoring.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Space</h3>
+                    <p>Planetary exploration and satellite servicing.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Military</h3>
+                    <p>Reconnaissance and hazardous task removal.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Logistics</h3>
+                    <p>Warehouse picking and autonomous delivery.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Smart Homes</h3>
+                    <p>Cleaning, security, and home assistance.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Research Labs</h3>
+                    <p>Experimentation and data collection.</p>
+                </div>
+                <div class="app-card glass">
+                    <h3>Construction</h3>
+                    <p>Bricklaying, demolition, and site inspection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TIMELINE SECTION ===================== -->
+    <section class="section" id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Evolution</p>
+                <h2 class="section-title">Timeline of Robotics</h2>
+                <p class="section-desc">A journey from the first industrial arm to the autonomous future.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-year">1961</span>
+                        <h3>First Industrial Robot</h3>
+                        <p>Unimate, the first programmable industrial robot, begins work on a General Motors assembly line.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-year">1956–1980s</span>
+                        <h3>Development of AI</h3>
+                        <p>Early artificial intelligence research lays the theoretical groundwork for autonomous decision-making.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-year">2000s–2020s</span>
+                        <h3>Modern Humanoid Robots</h3>
+                        <p>Advanced humanoids demonstrate walking, balance, and natural interaction powered by deep learning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-year">Future</span>
+                        <h3>Autonomous Everything</h3>
+                        <p>Robots integrate seamlessly into homes, cities, and industries, working alongside humans every day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section class="section section-alt" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Visuals</p>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-desc">A glimpse into the machines shaping the future.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item gal-1"><span>Humanoid Robot</span></div>
+                <div class="gallery-item gal-2"><span>Industrial Robot</span></div>
+                <div class="gallery-item gal-3"><span>Robot Arm</span></div>
+                <div class="gallery-item gal-4"><span>Drone</span></div>
+                <div class="gallery-item gal-5"><span>Mars Rover</span></div>
+                <div class="gallery-item gal-6"><span>Surgical Robot</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+
+    <!-- ===================== FAQ SECTION ===================== -->
+    <section class="section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Questions</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion" id="accordion">
+                <div class="accordion-item glass">
+                    <button class="accordion-header"><span>What is robotics?</span><span class="accordion-icon">+</span></button>
+                    <div class="accordion-body">
+                        <p>Robotics is the field of engineering and computer science focused on designing, building, and programming machines that can sense and act in the physical world.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header"><span>What programming languages are used?</span><span class="accordion-icon">+</span></button>
+                    <div class="accordion-body">
+                        <p>Python and C++ are the most common, alongside frameworks like ROS, with MATLAB and Java also used for specific robotics applications.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header"><span>What sensors do robots use?</span><span class="accordion-icon">+</span></button>
+                    <div class="accordion-body">
+                        <p>Common sensors include cameras, LiDAR, ultrasonic sensors, gyroscopes, accelerometers, and force/torque sensors.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header"><span>What careers exist in robotics?</span><span class="accordion-icon">+</span></button>
+                    <div class="accordion-body">
+                        <p>Careers span robotics engineering, AI research, mechatronics, embedded systems development, automation engineering, and robotics technician roles.</p>
+                    </div>
+                </div>
+                <div class="accordion-item glass">
+                    <button class="accordion-header"><span>Can beginners learn robotics?</span><span class="accordion-icon">+</span></button>
+                    <div class="accordion-body">
+                        <p>Yes. Starter kits like Arduino and Raspberry Pi, along with free online courses, make robotics accessible to complete beginners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Get In Touch</p>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-desc">Questions about robotics or AI? Send us a message.</p>
+            </div>
+
+            <form class="contact-form glass" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us what you're curious about"></textarea>
+                    <span class="error-msg" id="messageError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary ripple">Send Message</button>
+                <p class="form-success" id="formSuccess">Message sent successfully. We'll be in touch soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><span class="logo-icon">R</span><span class="logo-text">AI</span></a>
+                <p>Engineering the future of intelligent machines.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter" class="social-icon">𝕏</a>
+                    <a href="#" aria-label="LinkedIn" class="social-icon">in</a>
+                    <a href="#" aria-label="YouTube" class="social-icon">▶</a>
+                    <a href="#" aria-label="GitHub" class="social-icon">gh</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <a href="#about">About</a>
+                <a href="#types">Robot Types</a>
+                <a href="#tech">Technologies</a>
+                <a href="#applications">Applications</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Future of Robotics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
